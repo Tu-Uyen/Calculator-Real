@@ -31,11 +31,11 @@ namespace Calculator
         {
             this.label1 = new System.Windows.Forms.Label();
             this.btCong = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtA = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtB = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtKetQua = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -59,13 +59,14 @@ namespace Calculator
             this.btCong.TabIndex = 1;
             this.btCong.Text = "+";
             this.btCong.UseVisualStyleBackColor = true;
+            this.btCong.Click += new System.EventHandler(this.btCong_Click);
             // 
-            // textBox1
+            // txtA
             // 
-            this.textBox1.Location = new System.Drawing.Point(262, 61);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(348, 39);
-            this.textBox1.TabIndex = 2;
+            this.txtA.Location = new System.Drawing.Point(262, 61);
+            this.txtA.Name = "txtA";
+            this.txtA.Size = new System.Drawing.Size(348, 39);
+            this.txtA.TabIndex = 2;
             // 
             // label2
             // 
@@ -78,12 +79,12 @@ namespace Calculator
             this.label2.TabIndex = 0;
             this.label2.Text = "Số thứ hai:";
             // 
-            // textBox2
+            // txtB
             // 
-            this.textBox2.Location = new System.Drawing.Point(262, 118);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(348, 39);
-            this.textBox2.TabIndex = 2;
+            this.txtB.Location = new System.Drawing.Point(262, 118);
+            this.txtB.Name = "txtB";
+            this.txtB.Size = new System.Drawing.Size(348, 39);
+            this.txtB.TabIndex = 2;
             // 
             // label3
             // 
@@ -96,21 +97,21 @@ namespace Calculator
             this.label3.TabIndex = 0;
             this.label3.Text = "Kết quả:";
             // 
-            // textBox3
+            // txtKetQua
             // 
-            this.textBox3.Location = new System.Drawing.Point(262, 183);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(348, 39);
-            this.textBox3.TabIndex = 2;
+            this.txtKetQua.Location = new System.Drawing.Point(262, 183);
+            this.txtKetQua.Name = "txtKetQua";
+            this.txtKetQua.Size = new System.Drawing.Size(348, 39);
+            this.txtKetQua.TabIndex = 2;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(740, 391);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtKetQua);
+            this.Controls.Add(this.txtB);
+            this.Controls.Add(this.txtA);
             this.Controls.Add(this.btCong);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -128,11 +129,11 @@ namespace Calculator
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btCong;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtA;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtB;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtKetQua;
     }
 }
 

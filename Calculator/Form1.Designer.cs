@@ -36,6 +36,7 @@ namespace Calculator
             this.txtB = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtKetQua = new System.Windows.Forms.TextBox();
+            this.btTru = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -53,7 +54,7 @@ namespace Calculator
             // 
             this.btCong.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCong.ForeColor = System.Drawing.Color.Maroon;
-            this.btCong.Location = new System.Drawing.Point(493, 258);
+            this.btCong.Location = new System.Drawing.Point(494, 259);
             this.btCong.Name = "btCong";
             this.btCong.Size = new System.Drawing.Size(101, 58);
             this.btCong.TabIndex = 1;
@@ -99,10 +100,22 @@ namespace Calculator
             // 
             // txtKetQua
             // 
-            this.txtKetQua.Location = new System.Drawing.Point(262, 183);
+            this.txtKetQua.Location = new System.Drawing.Point(263, 184);
             this.txtKetQua.Name = "txtKetQua";
             this.txtKetQua.Size = new System.Drawing.Size(348, 39);
             this.txtKetQua.TabIndex = 2;
+            // 
+            // btTru
+            // 
+            this.btTru.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btTru.ForeColor = System.Drawing.Color.Maroon;
+            this.btTru.Location = new System.Drawing.Point(376, 259);
+            this.btTru.Name = "btTru";
+            this.btTru.Size = new System.Drawing.Size(101, 58);
+            this.btTru.TabIndex = 1;
+            this.btTru.Text = "-";
+            this.btTru.UseVisualStyleBackColor = true;
+            this.btTru.Click += new System.EventHandler(this.btTru_Click);
             // 
             // Form1
             // 
@@ -112,6 +125,7 @@ namespace Calculator
             this.Controls.Add(this.txtKetQua);
             this.Controls.Add(this.txtB);
             this.Controls.Add(this.txtA);
+            this.Controls.Add(this.btTru);
             this.Controls.Add(this.btCong);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -134,6 +148,7 @@ namespace Calculator
         private System.Windows.Forms.TextBox txtB;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtKetQua;
+        private System.Windows.Forms.Button btTru;
     }
 }
 
